@@ -125,23 +125,22 @@ block: "start",
 inline: "nearest"
 }); 
 }
-document.onkeydown = function(evt) {
-    evt = evt || window.event;
-    if (evt.altKey && evt.keyCode == 49) {
+document.addEventListener('keydown', function(evt) {
+    if (evt.code == "Digit1" && (evt.altKey)) {
         myFunction('button-ln', 'hint-ln', 'button-ln')}  
-    if (evt.altKey && evt.keyCode == 50) {
+    if (evt.code == "Digit2" && (evt.altKey)) {
         myFunction('button-mq', 'hint-mq', 'button-mq')}
-    if (evt.altKey && evt.keyCode == 51) {
+    if (evt.code == "Digit3" && (evt.altKey)) {
         myFunction('button-pat', 'hint-pat', 'button-pat')}
-    if (evt.altKey && evt.keyCode == 52) {
+    if (evt.code == "Digit4" && (evt.altKey)) {
         myFunction('button-bb', 'hint-bb', 'button-bb')}
-    if (evt.altKey && evt.keyCode == 53) {
+    if (evt.code == "Digit5" && (evt.altKey)) {
         myFunction('button-fa', 'hint-fa', 'button-fa')}
-    if (evt.altKey && evt.keyCode == 54) {
+    if (evt.code == "Digit6" && (evt.altKey)) {
         myFunction('button-sketchy', 'hint-sketchy', 'button-sketchy')}
-    if (evt.altKey && evt.keyCode == 55) {
+    if (evt.code == "Digit7" && (evt.altKey)) {
         myFunction('button-physeo', 'hint-physeo', 'button-physeo')}
-    if (evt.altKey && evt.keyCode == 56) {
+    if (evt.code == "Digit8" && (evt.altKey)) {
         myFunction('button-ar', 'hint-ar', 'button-ar')}
 
     if (evt.keyCode == 222) {
@@ -154,7 +153,7 @@ document.onkeydown = function(evt) {
     finally{try{myFunction('button-mq', 'hint-mq', 'button-mq');}
     finally{myFunction('button-ln', 'hint-ln', 'button-ln');}}}}}}}
     }
-}
+})
 </script>
 
   
